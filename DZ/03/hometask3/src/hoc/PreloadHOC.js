@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './PreloadHOC.css';
+import MyPortal from '../portal/MyPortal'
 
 const isEmpty = (prop) => (
   prop === null ||
@@ -13,9 +14,11 @@ const PreloadHOC = (loadingProp) => (WrappedComponent) => {
     render() {
       return isEmpty(this.props[loadingProp]) ?
       <div className="loader" />
-      : <WrappedComponent {...this.props} />;
+      :
+      <MyPortal>This is Portal
+        <WrappedComponent {...this.props} />
+      </MyPortal> 
     }
   }
 }
-
 export default PreloadHOC;

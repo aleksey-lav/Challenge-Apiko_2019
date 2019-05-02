@@ -1,6 +1,6 @@
 
 
-/*  const React = {
+ const React = {
   createElement:({ isPair = true, ...props})=>{
     return (
       isPair ? 
@@ -22,10 +22,10 @@ const app = React.createElement({component: 'div', style: "background-color: red
 React.render(
   app,
  document.getElementById('root')
-); */
+);
 
 
-const str = ['sadsad', 'sad', 12, 'gf']
+/* const str = ['sadsad', 'sad', 12, 'gf']
 console.log(str+'\n')
 const newStr = str.slice(-3).reverse()
-console.log(newStr)
+console.log(newStr) */

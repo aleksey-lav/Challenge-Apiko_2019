@@ -12,6 +12,7 @@ class App extends Component {
   state = {
     isLoading: true,
     data: [],
+    
     error: null, 
     numberPosts: 10
   }
@@ -42,4 +43,4 @@ class App extends Component {
     );
   }
 }
-  export default App
+export default App
